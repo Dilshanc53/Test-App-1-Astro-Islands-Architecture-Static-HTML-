@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home | Postflight Test App">
+  <main class="min-h-screen flex flex-col items-center justify-center p-8">
+    <h1 class="text-5xl font-extrabold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+      Welcome to Astro Islands
+    </h1>
+    <p class="text-xl text-slate-300 mb-12 max-w-2xl text-center">
+      Testing Postflight's ability to crawl heavily optimized static HTML and wait for delayed JavaScript hydration.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+      <a href="/dashboard" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2 text-blue-400">Dashboard &rarr;</h2>
+        <p class="text-slate-400">Interactive Astro Island with React.</p>
+      </a>
+      <a href="/pricing" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2 text-purple-400">Pricing &rarr;</h2>
+        <p class="text-slate-400">Static HTML pricing tiers.</p>
+      </a>
+      <a href="/about" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">About Us &rarr;</h2>
+      </a>
+      <a href="/contact" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">Contact &rarr;</h2>
+      </a>
+      <a href="/blog" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">Blog &rarr;</h2>
+      </a>
+      <a href="/features" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">Features &rarr;</h2>
+      </a>
+      <a href="/careers" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">Careers &rarr;</h2>
+      </a>
+      <a href="/legal" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">Legal &rarr;</h2>
+      </a>
+      <a href="/faq" class="p-6 rounded-2xl bg-slate-800 hover:bg-slate-700 transition-colors border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2">FAQ &rarr;</h2>
+      </a>
+    </div>
+  </main>
+</Layout>

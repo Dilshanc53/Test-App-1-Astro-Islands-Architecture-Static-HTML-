@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Pricing | Postflight Test App">
+  <main class="p-12 max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6 text-purple-400">Pricing</h1>
+    <p class="text-lg text-slate-300 mb-8">Pure static HTML pricing tiers.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-4">Basic</h2>
+        <p class="text-4xl font-bold mb-6">$10<span class="text-lg font-normal text-slate-400">/mo</span></p>
+        <ul class="space-y-2 text-slate-300">
+          <li>1 User</li>
+          <li>10 Projects</li>
+          <li>Basic Support</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-purple-900 rounded-2xl border border-purple-500 shadow-xl scale-105">
+        <h2 class="text-2xl font-bold mb-4">Pro</h2>
+        <p class="text-4xl font-bold mb-6">$30<span class="text-lg font-normal text-slate-400">/mo</span></p>
+        <ul class="space-y-2 text-purple-200">
+          <li>5 Users</li>
+          <li>Unlimited Projects</li>
+          <li>Priority Support</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700 shadow-xl">
+        <h2 class="text-2xl font-bold mb-4">Enterprise</h2>
+        <p class="text-4xl font-bold mb-6">$99<span class="text-lg font-normal text-slate-400">/mo</span></p>
+        <ul class="space-y-2 text-slate-300">
+          <li>Unlimited Users</li>
+          <li>Unlimited Projects</li>
+          <li>24/7 Support</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</Layout>
