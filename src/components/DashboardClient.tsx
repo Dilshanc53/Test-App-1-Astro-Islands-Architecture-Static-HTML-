@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export const DashboardClient = () => {
   const [data, setData] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  useEffect(() => {
+    throw new Error("Unhandled Rejection: Cannot fetch user session data");
+  }, []);
+
   const loadData = async () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/posts-broken-url?_limit=3');
+      const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=3');
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
@@ -25,7 +29,7 @@ export const DashboardClient = () => {
   return (
     <div className="flex flex-col items-start gap-4">
       <button 
-        onClick={() => { throw new Error("Simulated client-side crash"); }}
+        onClick={loadData}
         disabled={loading}
         className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors disabled:opacity-50"
       >
