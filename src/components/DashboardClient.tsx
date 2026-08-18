@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export const DashboardClient = () => {
   const [data, setData] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    throw new Error("Unhandled Rejection: Cannot fetch user session data");
-  }, []);
 
   const loadData = async () => {
     setLoading(true);
