@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+// Trigger deployment
 export const DashboardClient = () => {
   const [data, setData] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
